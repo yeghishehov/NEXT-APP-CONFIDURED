@@ -15,6 +15,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     return {
         props: {
             deviceType: query.viewport,
+            initialStateData: { ok: true },
         },
     };
 };

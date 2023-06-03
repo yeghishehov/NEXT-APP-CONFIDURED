@@ -4,6 +4,7 @@ export function loadLayout(
     Mobile: React.ComponentType,
 ): React.ComponentType {
     switch (device) {
+        case "tablet":
         case "mobile":
             return Mobile;
         default:
